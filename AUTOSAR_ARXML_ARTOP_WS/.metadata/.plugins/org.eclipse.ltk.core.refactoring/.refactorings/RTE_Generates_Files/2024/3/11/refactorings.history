@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;RTE_Generates_Files/Rte_gen&apos; to &apos;RTE_gen&apos;" description="Rename resource &apos;Rte_gen&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="Rte_gen" name="RTE_gen" stamp="1710414681369" updateReferences="true"/>
+</session>

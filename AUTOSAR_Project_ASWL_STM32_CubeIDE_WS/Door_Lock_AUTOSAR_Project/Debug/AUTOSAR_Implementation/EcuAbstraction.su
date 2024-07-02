@@ -1,0 +1,2 @@
+EcuAbstraction.c:23:6:ReadDoorSensor_runnable	16	static
+EcuAbstraction.c:33:16:Led_Switch_runnable	16	static

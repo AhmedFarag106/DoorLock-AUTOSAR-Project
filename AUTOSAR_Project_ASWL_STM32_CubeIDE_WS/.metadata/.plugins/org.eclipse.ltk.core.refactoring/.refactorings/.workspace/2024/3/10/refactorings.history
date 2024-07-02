@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Delete resource &apos;DoorLock_AUTOSAR_Project&apos;" deleteContents="true" description="Delete resource &apos;DoorLock_AUTOSAR_Project&apos;" element1="/DoorLock_AUTOSAR_Project" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1709966934505"/>
+</session>

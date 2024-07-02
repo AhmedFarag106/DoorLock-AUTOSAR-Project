@@ -1,0 +1,27 @@
+09:37:48 **** Incremental Build of configuration Debug for project Door_Lock_AUTOSAR_Project ****
+make -j8 all 
+arm-none-eabi-gcc  -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"F:/ENG ASU/Graduation Project/Embedded/AUTOSAR/Project/AUTOSAR_Project_ASWL_STM32_CubeIDE_WS/Door_Lock_AUTOSAR_Project/HAL/includes" -I"F:/ENG ASU/Graduation Project/Embedded/AUTOSAR/Project/AUTOSAR_Project_ASWL_STM32_CubeIDE_WS/Door_Lock_AUTOSAR_Project/Stm32_F103C6_Drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+../Src/main.c: In function 'StartOS':
+../Src/main.c:83:25: warning: implicit declaration of function 'ReadDoorSensor_runnable' [-Wimplicit-function-declaration]
+   83 |                         ReadDoorSensor_runnable();
+      |                         ^~~~~~~~~~~~~~~~~~~~~~~
+../Src/main.c:89:25: warning: implicit declaration of function 'DoorLock_Indcation_runnable' [-Wimplicit-function-declaration]
+   89 |                         DoorLock_Indcation_runnable();
+      |                         ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+arm-none-eabi-gcc  -gdwarf-2 -o "Door_Lock_AUTOSAR_Project.elf" @"objects.list"   -mcpu=cortex-m3 -T"F:\ENG ASU\Graduation Project\Embedded\AUTOSAR\Project\AUTOSAR_Project_ASWL_STM32_CubeIDE_WS\Door_Lock_AUTOSAR_Project\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Door_Lock_AUTOSAR_Project.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Door_Lock_AUTOSAR_Project.elf
+ 
+arm-none-eabi-size  Door_Lock_AUTOSAR_Project.elf 
+arm-none-eabi-objdump -h -S Door_Lock_AUTOSAR_Project.elf  > "Door_Lock_AUTOSAR_Project.list"
+arm-none-eabi-objcopy  -O ihex Door_Lock_AUTOSAR_Project.elf  "Door_Lock_AUTOSAR_Project.hex"
+   text	   data	    bss	    dec	    hex	filename
+   3160	      8	   1720	   4888	   1318	Door_Lock_AUTOSAR_Project.elf
+Finished building: default.size.stdout
+ 
+Finished building: Door_Lock_AUTOSAR_Project.hex
+ 
+Finished building: Door_Lock_AUTOSAR_Project.list
+ 
+
+09:37:49 Build Finished. 0 errors, 2 warnings. (took 986ms)
+

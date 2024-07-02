@@ -1,0 +1,9 @@
+/*
+ * DoorLock_indicationSWC.c
+ *
+ *  Created on: Mar 14, 2024
+ *      Author: Ahmed
+ */
+#include "RTE_gen/Rte_DoorLock_indicationSWC.h"
+
+void DoorLock_Indcation_runnable(void);
